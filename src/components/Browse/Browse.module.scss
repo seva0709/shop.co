@@ -1,0 +1,57 @@
+.cards {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "CARD1 CARD2 CARD2"
+        "CARD3 CARD3 CARD4";
+
+        div{
+            min-height: 287px;
+         border-radius: 20px;
+        //  background-repeat: no-repeat;
+        // background-position: center ;
+        }
+
+    .CARD1 {
+        grid-area: CARD1;
+        margin-left: 20px;
+        background-image: url(/whiteman.jpg);
+    }
+
+    .CARD2 {
+        grid-area: CARD2;
+        background-image: url(/blackman.jpg);
+margin-right: 20px;
+
+    }
+
+    .CARD3 {
+        grid-area: CARD3;
+        margin-left: 20px;
+       
+        background-image: url(/whitewoman.jpg);
+
+    }
+
+    .CARD4 {
+        grid-area: CARD4;
+margin-right: 20px;
+    
+        background-image: url(/card4.jpg);
+
+    }
+
+
+}
+.box{
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding-bottom: 40px;
+}
+.title{
+    margin-top: 20px;
+    margin-left: 10px;
+}

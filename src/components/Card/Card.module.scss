@@ -1,0 +1,23 @@
+.card{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+
+    img{
+        width: 100%;
+        border-radius: 20px;
+        display: block;
+        &:nth-child(1){
+            aspect-ratio: 1;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    h3{
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    b{
+        font-size: 24px;
+    }
+}
