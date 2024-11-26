@@ -1,0 +1,42 @@
+.wrap{
+    background-color: #f0f0f0;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    gap: 20px;
+
+    @media(max-width: 800px){
+        flex-direction: column;
+    }
+}
+.card{
+    flex-grow: 1;
+    transition: 0.5s;
+    padding: 25px;
+    border-radius: 20px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    
+    &:hover{
+        flex-grow: 3;
+    }
+    
+    &:nth-child(1){
+       background-image: url(/sale-1.png); 
+    }
+
+    &:nth-child(2){
+       background-image: url(/sale-2.png); 
+    }
+
+    &:nth-child(3){
+       background-image: url(/sale-3.png); 
+       background-position: -60px;
+    }
+
+    &:nth-child(4){
+       background-image: url(/sale-4.png); 
+    }
+}
