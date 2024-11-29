@@ -1,13 +1,10 @@
 import React from 'react'
 import s from './SectionTitle.module.scss'
 
-const SectionTitle = ({children, arient}) => {
+const SectionTitle = ({ children='Soon...', orient='center' }) => {
   return (
-    
     <>
-    <h1 style={{textAlign: arient}} className={s.title}>
-        {children}
-    </h1>
+    <h2 style={{textAlign: orient}} className={s.title}>{children}</h2>
     </>
   )
 }

@@ -1,0 +1,38 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  
+  >img{
+    width: 100%;
+  }
+  >p{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.sale{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+
+  p{
+    background-color: #ff33335e;
+    color: #FF3333;
+    border-radius: 60px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  b{
+    font-size: 18px;
+    font-weight: 800;
+  }
+  s{
+    font-size: 16px;
+    font-weight: 800;
+    opacity: 50%;
+  }
+}
