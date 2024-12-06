@@ -1,0 +1,128 @@
+.wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    @media (max-width:760px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 2/1;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    > div{
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &:nth-child(1){
+            h2{
+                font-size: 40px;
+                text-transform: uppercase;
+                font-weight: 900;
+
+            }
+            h3{
+                font-size: 20px;
+                .price{
+                    display: flex;
+                    gap: 12px;
+                    font-size: 30px;
+
+                }
+            }
+            p{
+                font-size: 16px;
+                opacity: 0.6;
+                line-height: 1.4;
+            }
+        }
+
+        &:nth-child(2){
+            .colors{
+                display: flex;
+                gap: 16px;
+                div{
+                    width: 37px;
+                    height: 37px;
+                    border-radius: 50%;
+                    background-color: gray;
+
+                    &:nth-child(1){
+                        background-color: #4F4631;
+                    }
+                    &:nth-child(2){
+                        background-color: #314F4A;
+                    }
+                    &:nth-child(3){
+                        background-color: #31344F;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(3){
+           .btns{
+            display: flex;
+            gap: 15px;
+            button{
+                padding: 12px 24px;
+                border-radius: 30px;
+                background-color: #f0f0f0;
+                border: none;
+                transition: 0.3s;
+                cursor: pointer;
+
+                &:focus{
+                    background-color: black;
+                    color: white;
+                }
+            }
+           }
+        }
+       &:nth-child(4){
+        // display: flex;
+
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+       
+        button{
+            padding: 15px;
+            border-radius: 60px;
+            border:none ;
+        }
+        .btn1{
+            display: flex;
+            align-items: center;
+            background-color: #F0F0F0;
+            justify-content: space-evenly;
+            border-radius:60px;
+        }
+        .btn2{
+            background-color: black;
+            color: white;
+        }
+       }
+    }
+}
