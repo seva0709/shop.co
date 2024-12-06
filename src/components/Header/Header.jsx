@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
 import s from './Header.module.scss';
 import { Link } from 'react-router-dom';
+import { AppContextProvider, useAppContext } from '../../context';
 
 const Header = () => {
-  const [isActive, setIsActive] = useState(false)
-  const toggleMenu = () => {
-    setIsActive(!isActive)
-  }
 
-  const closeMenu = () => {
-    setIsActive(false)
-  }
+  const {isActive, toggleMenu, closeMenu} = useAppContext()
+
   return (
     <>
       <header className={s.header}>

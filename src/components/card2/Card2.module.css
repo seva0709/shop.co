@@ -1,0 +1,17 @@
+.card {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  padding: 30px;
+}
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card div b {
+  display: flex;
+  align-items: center;
+}
+.card div p {
+  opacity: 50%;
+}/*# sourceMappingURL=Card2.module.css.map */

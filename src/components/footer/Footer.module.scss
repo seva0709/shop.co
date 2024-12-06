@@ -13,6 +13,15 @@
     p{
         opacity: 50%;
     }
+    @media (max-width:1000px) {
+        grid-template-columns: repeat(4, 2fr);
+    }
+    @media (max-width:1050px) {
+        grid-template-columns: repeat(3, 2fr);
+    }
+    @media (max-width:900px) {
+        grid-template-columns: repeat(3, 2fr);
+    }
     @media (max-width:700px) {
         grid-template-columns: repeat(2, 2fr);
     }
@@ -20,6 +29,8 @@
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+
 }
 
 .card1{

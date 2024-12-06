@@ -25,3 +25,23 @@
         font-size: 24px;
     }
 }
+
+.stars {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+
+    span {
+        font-size: 20px;
+        color: gray; 
+        transition: color 0.3s ease;
+    }
+
+    .activeStar {
+        color: gold; 
+    }
+
+    .inactiveStar {
+        color: gray; 
+    }
+}

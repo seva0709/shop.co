@@ -1,0 +1,24 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+.card img :nth-child(1) {
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.card h3 {
+  font-size: 20px;
+  margin-top: 8px;
+}
+.card b {
+  font-size: 24px;
+}/*# sourceMappingURL=Card.module.css.map */
